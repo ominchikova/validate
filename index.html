@@ -14,20 +14,20 @@
                 <h1 class="form__title"> Регистрация </h1>
                 <div class="form__item">
                     <label for="formName" class="form__label">Ваше имя*:</label>
-                    <input type="text" id="formName" class="form__input" name="name" required>
+                    <input type="text" id="name" class="form__input _req" name="name" required>
                 </div>
 
                 <div class="form__item">
                     <label for="formEmail" class="form__label">E-mail*:</label>
-                    <input type="text" id="formEmail" class="form__input" name="email" required>
+                    <input type="text" id="email" class="form__input _req _email" name="email" required>
                 </div>
           <div class="form__item">
                     <label for="formPassword" class="form__label">Пароль*:</label>
-                    <input type="text" id="formPAssword" class="form__input" name="password" required>
+                    <input type="date" id="password" class="form__input _req"  name="password" required>
                 </div>
                 <div class="form__item">
                     <div class="checkbox">
-                        <input type="checkbox"  id="formAgree" name="agree" class="checkbox__input">
+                        <input checked type="checkbox"  id="formAgree" name="agree" class="checkbox__input _req">
                         <label for="formAgree" class="checkbox__label"><span>Я согласен на обработку персональных данных</span></label>
                     </div>
                 </div>  
@@ -35,6 +35,6 @@
             </form>
         </div>  
     </div>
-  <script src="script.js"></script>  
+  <script src="./script.js"></script>  
 </body>
 </html>
