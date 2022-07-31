@@ -58,12 +58,16 @@ body {
     font-size: 24px;
     
 }
-.form__input._error{
-    box-shadow: 0 0 15px red;
+.form__input::placeholder{
+    color: #ad9ead;
+    font-size: 18px;
 }
-.checkbox._error .checkbox__label::before{
+/* .form__input._error{
     box-shadow: 0 0 15px red;
-}
+} */
+/* .checkbox._error .checkbox__label::before{
+    box-shadow: 0 0 15px red;
+} */
 .checkbox__input{
     display: none;
 }

@@ -14,24 +14,31 @@
                 <h1 class="form__title"> Регистрация </h1>
                 <div class="form__item">
                     <label for="formName" class="form__label">Ваше имя*:</label>
-                    <input type="text" id="name" class="form__input _req" name="name" required>
+                    <input type="text" 
+                    id="name"
+                     class="form__input _req"
+                     name="name" 
+                     required
+                    placeholder="Введите Имя (только русские буквы)"
+                    data-reg="^[А-ЯЁ][а-яё]*$">
                 </div>
 
                 <div class="form__item">
                     <label for="formEmail" class="form__label">E-mail*:</label>
-                    <input type="text" id="email" class="form__input _req _email" name="email" required>
+                    <input type="text" id="email" class="form__input _req _email" name="email" required placeholder="admin@www.com" 
+                    data-reg="^[^а-я]+@[^а-я]+\.[^а-я\._'+;*^&=?~{}\-\.\/,\\]+$">
                 </div>
           <div class="form__item">
-                    <label for="formPassword" class="form__label">Пароль*:</label>
-                    <input type="date" id="password" class="form__input _req"  name="password" required>
+                    <label for="formPassword" class="form__label" >Пароль*:</label> 
+                    <input type="password" id="password" class="form__input _req"  name="password" required placeholder="Введите пароль не менее 8 символов" data-reg="^((?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,20})" >
                 </div>
                 <div class="form__item">
                     <div class="checkbox">
-                        <input checked type="checkbox"  id="formAgree" name="agree" class="checkbox__input _req">
+                        <input  type="checkbox"  id="formAgree" name="agree" class="checkbox__input _req" >
                         <label for="formAgree" class="checkbox__label"><span>Я согласен на обработку персональных данных</span></label>
                     </div>
                 </div>  
-                    <button type="submit" class="form__button">Отправить</button>      
+                    <button type="submit" class="form__button" id="button" name="button" >Отправить</button>      
             </form>
         </div>  
     </div>
